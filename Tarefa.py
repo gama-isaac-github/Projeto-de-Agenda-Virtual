@@ -48,7 +48,7 @@ class Tarefa:
         
         # adiciona o botão de concluir tarefa
         if Tarefa.ok_icon is None:
-            Tarefa.ok_icon = PIL.Image.open('Assets/ok_icon.png').resize((15, 15))
+            Tarefa.ok_icon = PIL.Image.open('assets/ok_icon.png').resize((15, 15))
             Tarefa.ok_icon = ImageTk.PhotoImage(Tarefa.ok_icon)
         botao_de_conclusao = ttk.Button(self.widget_tarefa, image=Tarefa.ok_icon, command=self.concluir_tarefa)
         botao_de_conclusao.grid(column=0, row=0, padx=3, pady=6)
